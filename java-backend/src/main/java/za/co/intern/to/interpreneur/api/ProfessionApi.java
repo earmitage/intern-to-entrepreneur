@@ -41,24 +41,15 @@ public class ProfessionApi {
 		
 	}
 
-
 	//fetch multiple records from the server
 	@GetMapping("/professions")
 	public List<Profession> fetchProfessions() {
 		List<Profession> professions = new ArrayList<Profession>();
-		
 
 		//TODO fetch from database
 		return professions;
 
 	}
+	
 
-	
-	//status code  
-	//200 - 299,
-	//300 - 399
-	
-	//400, 406, - 499  404 401 403
-	
-	//500 - 599
 }
