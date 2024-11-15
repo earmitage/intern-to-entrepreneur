@@ -9,4 +9,19 @@ public class Profession {
 	private String name;
 	private List<Reference> references;
 
+	public void setUuid(String uuid) {
+		this.uuid = uuid;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getUuid() {
+		return uuid;
+	}
 }
