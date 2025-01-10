@@ -5,23 +5,24 @@ import java.util.UUID;
 
 public class Profession {
 
-	private String uuid = UUID.randomUUID().toString();
-	private String name;
-	private List<Reference> references;
+    private String uuid = UUID.randomUUID().toString();
+    private String name;
+    private List<Reference> references;
 
-	public void setUuid(String uuid) {
-		this.uuid = uuid;
-	}
+    public void setUuid(String uuid) {
+	this.uuid = uuid;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setName(String name) {
+	this.name = name;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+	return name;
+    }
 
-	public String getUuid() {
-		return uuid;
-	}
+    public String getUuid() {
+	return uuid;
+    }
+
 }
