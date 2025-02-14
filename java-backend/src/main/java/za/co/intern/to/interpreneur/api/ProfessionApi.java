@@ -15,7 +15,7 @@ import za.co.intern.to.interpreneur.entities.ProfessionEntity;
 import za.co.intern.to.interpreneur.entities.ProfessionRepository;
 
 @RestController
-public class ProfessionApi {
+public class ProfessionApi implements ProfessionApiInterface{
 
     
     @Autowired
@@ -23,8 +23,10 @@ public class ProfessionApi {
     
     //Adding new resource to the server
     @PostMapping("/professions")
+    @Override
     public Profession createProfession(Profession profession) {
 
+	
 	
 	ProfessionEntity entity = new ProfessionEntity();
 	entity.setName(profession.getName());
@@ -65,6 +67,6 @@ public class ProfessionApi {
         return professions;
 
     }
-
+    
 
 }

@@ -1,5 +1,7 @@
 package za.co.intern.to.interpreneur.domain;
 
+import java.util.List;
+
 public class User {
 
 	private String username;
